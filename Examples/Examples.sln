@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Examples", "Examples\Examples.fsproj", "{65DD0E09-7646-48A3-80EF-1578A3FF3DEE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HandsonFSharp", "HandsonFSharp\HandsonFSharp.fsproj", "{886E5054-D938-423F-AEB4-4885EC0EBB7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandsOnSharp", "HandsOnSharp\HandsOnSharp.csproj", "{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65DD0E09-7646-48A3-80EF-1578A3FF3DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DD0E09-7646-48A3-80EF-1578A3FF3DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DD0E09-7646-48A3-80EF-1578A3FF3DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DD0E09-7646-48A3-80EF-1578A3FF3DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886E5054-D938-423F-AEB4-4885EC0EBB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886E5054-D938-423F-AEB4-4885EC0EBB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886E5054-D938-423F-AEB4-4885EC0EBB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886E5054-D938-423F-AEB4-4885EC0EBB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

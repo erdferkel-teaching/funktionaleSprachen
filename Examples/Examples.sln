@@ -9,6 +9,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HandsonFSharp", "HandsonFSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandsOnSharp", "HandsOnSharp\HandsOnSharp.csproj", "{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Modules", "Modules\Modules.fsproj", "{BDEF4CCD-1000-4B53-A82A-F7AA1BDD6C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLooksAtFSharp", "CSharpLooksAtFSharp\CSharpLooksAtFSharp.csproj", "{EAA0DF42-E6EE-4A2F-8CD2-C83081A655E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A1309CD-0CDA-4724-816C-ECFDFBAF601C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEF4CCD-1000-4B53-A82A-F7AA1BDD6C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEF4CCD-1000-4B53-A82A-F7AA1BDD6C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEF4CCD-1000-4B53-A82A-F7AA1BDD6C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEF4CCD-1000-4B53-A82A-F7AA1BDD6C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA0DF42-E6EE-4A2F-8CD2-C83081A655E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA0DF42-E6EE-4A2F-8CD2-C83081A655E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA0DF42-E6EE-4A2F-8CD2-C83081A655E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA0DF42-E6EE-4A2F-8CD2-C83081A655E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

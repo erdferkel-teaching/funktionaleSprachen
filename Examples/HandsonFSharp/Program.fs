@@ -26,8 +26,48 @@ let delimiters =
     |]
 
 
+
+type Tree<'k,'v> =
+    | EmptyTree
+    | TreeNode of ' k * 'v * Tree<'k,'v> * Tree<'k,'v>
+    
+
 [<EntryPoint>]
-let main argv = 
+let main argv =
+
+
+    let empty = EmptyTree
+    
+    let rec find key = function
+        | EmptyTree -> None
+        | TreeNode(k, v, l, r) ->
+            if key = k then Some v
+            elif key < k then find key l
+            else find key r
+        
+    let rec insert key value = function
+        | EmptyTree -> TreeNode(key,value, EmptyTree, EmptyTree)
+        | TreeNode(hd, v, l, r) as node ->
+            if hd = key then TreeNode(key,value,l,r)
+            elif key < hd then TreeNode(hd, v, insert key value l, r)
+            else TreeNode(hd, v, l, insert key value r)
+
+    let ofList xs = List.fold (fun m (k,v) -> insert k v m) empty xs
+
+    let rec toList t =
+        match t with    
+            | EmptyTree -> []
+            | TreeNode(k,v,l,r) -> 
+                (toList l) @ [k,v] @ (toList r)
+
+    let t = ofList [("a",2);("b",3);("a",5)]
+    let five = find "a" t // 5
+    let t2 = insert "c" 10 t 
+    let ten = find "c" t2 // 10
+    let notFound = find "x" t2 // None
+
+    let result = toList t2
+ 
     //let dirPath = @"..\..\"
     let dirPath = @"C:\Users\steinlechner\Desktop\aardvark.base\src"
     let files = Directory.EnumerateFiles( dirPath, "*.cs", SearchOption.AllDirectories) |> Seq.map File.ReadAllLines |> Seq.toArray
